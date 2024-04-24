@@ -29,13 +29,11 @@ li {
   list-style: none;
 }
 a {
-  /* font-family: "Raleway"; */
   font-family: "Tahoma", "sans serif";
   color: var(--tertiary-color);
   text-decoration: none;
   font-weight: bolder;
   font-size: 14px;
-  /* color: var(--cor-de-link); */
 }
 
 h1,
@@ -59,8 +57,6 @@ header {
   padding: 0 15px;
   background-color: var(--background-box);
   border-bottom: 2px solid var(--primary-color);
-  /* border-radius: 0 0 12px 12px; */
-  /* margin-bottom: 0; */
 }
 
 .header__titleBox {
@@ -69,17 +65,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: yellow; */
 }
 
 .header__title {
   color: var(--font-color);
-  /* font-weight: 800; */
 }
-
-/* .header__list--hidden {
-  display: none;
-} */
 
 .header__contact {
   height: 70%;
@@ -87,7 +77,6 @@ header {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  /* background-color: coral; */
 }
 
 .header__contact__img {
@@ -137,7 +126,6 @@ main {
   max-width: 90%;
   height: max-content;
   text-wrap: wrap;
-  /* background-color: #0944da; */
   margin: 15px;
 }
 
@@ -150,7 +138,6 @@ main {
   align-content: center;
   gap: 10px;
   padding: 0 5px;
-  /* background-color: rgb(202, 119, 212); */
 }
 
 .banner__list__item {
@@ -162,17 +149,6 @@ main {
   background-color: var(--secondary-color);
   border-radius: 5px;
 }
-
-/* .banner__list__item:nth-child(4) {
-  background-color: chartreuse;
-  display: flex;
-  justify-self: center;
-} */
-
-/* a:hover {
-  color: hotpink;
-  text-decoration: underline;
-} */
 
 .aboutme {
   background-color: var(--background-box);
@@ -366,79 +342,106 @@ footer {
   color: var(--tertiary-color);
 }
 
-/*Sessão Title*/
+@media (min-width: 768px) {
+  header {
+    padding: 0 70px;
+  }
 
-section.title {
+  .banner__list {
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .banner__list > li:hover,
+  .aboutme__buttons__box > li:hover {
+    background-color: var(--font-color);
+  }
+
+  .banner__list__item {
+    height: 35px;
+  }
+
+  .aboutme {
+    padding: 30px 15px;
+    gap: 35px;
+  }
+
+  .aboutme__description {
+    width: 60%;
+  }
+
+  .aboutme__buttons__box {
+    width: max-content;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .aboutme_button {
+    height: 35px;
+  }
+
+  .skills,
+  .hobbies,
+  .formation,
+  .experience,
+  .contact {
+    padding: 30px 15px;
+  }
+
+  .skills__box,
+  .hobbies__box {
+    justify-content: center;
+  }
+
+  .formation__box,
+  .experience__box {
+    flex-direction: row;
+    height: 270px;
+    padding: 0;
+  }
+
+  .formation__item {
+    width: 20%;
+  }
+
+  .experience__item {
+    width: 20%;
+    height: 90%;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .contact {
+    position: relative;
+  }
+
+  .contact__msg {
+    width: 35%;
+    text-justify: auto;
+    text-indent: 0%;
+  }
+
+  .contact__footer {
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all300ms ease;
+  }
+
+  .contact__footer:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .contact__footer::before,
+  .contact__footer::after {
+    position: absolute;
+    display: block;
+    content: "";
+  }
+
+  footer {
+    font-weight: 600;
+  }
 }
-
-/*Sessão About*/
-
-section.about {
-}
-
-/*Sessão Hobbies*/
-
-section.hobbies {
-}
-
-/* Experiência Acadêmica*/
-
-section.academic {
-}
-
-/* experiência*/
-
-section.experience {
-}
-
-/*Contato*/
-
-section.formcontato {
-}
-
-/*footeer*/
-
-section.footer {
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////// */
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/* ///////////////////////////////////////////////////////////// */
-
-/*Tablet*/
-/* @media (min-width: 768px) {} */
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
-/* ///////////////////////////////////////////////////////////////// */
-/*Mobile*/
-/* @media (min-width: 425px) {} */
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
-/*Contato*/
-
-/*Footer*/
